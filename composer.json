@@ -1,0 +1,15 @@
+{
+    "name": "druto/druto",
+    "description": "Druto",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Biswarup Adhikari",
+            "email": "biswarupadhikari@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "druto/framework":"*"
+    }
+}
