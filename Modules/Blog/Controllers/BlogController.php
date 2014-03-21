@@ -1,6 +1,9 @@
 <?php
-namespace Modules\Controllers;
+namespace Modules\Blog\Controllers;
 class BlogController
 {
-	
+	public function test()
+	{
+		return "BlogController";
+	}
 }
