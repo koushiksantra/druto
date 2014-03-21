@@ -10,6 +10,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "druto/framework":"*"
+        "druto/framework":"dev-master"
     }
 }
