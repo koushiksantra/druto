@@ -1,0 +1,61 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "5658de6df8e4c18e0867e0da1edce6f5",
+    "packages": [
+        {
+            "name": "druto/framework",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/druto/framework.git",
+                "reference": "d7ad1c1248f9b44b58146499ed230fd7f63591ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/druto/framework/zipball/d7ad1c1248f9b44b58146499ed230fd7f63591ca",
+                "reference": "d7ad1c1248f9b44b58146499ed230fd7f63591ca",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Druto": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Biswarup Adhikari",
+                    "email": "biswarupadhikari@gmail.com"
+                }
+            ],
+            "description": "Druto PHP Framework",
+            "time": "2014-03-21 15:35:16"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "druto/framework": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}
