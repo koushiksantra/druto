@@ -3,6 +3,7 @@ namespace Modules\Blog\Controllers;
 use Modules\User\Models\Alam as Alam;
 use Druto\Controllers\Controller as Controller;
 use Druto\Configs\Config as Config;
+use Druto\DataBase\DataBase as DataBase;
 class BlogController extends Controller
 {
 	public $restfull=true;
@@ -47,15 +48,23 @@ class BlogController extends Controller
 
 	public function getproductDetails($pdtid)
 	{
-		//echo baseURL;
-		echo Config::get('database.default','test');
-		echo '<hr>';
-		Config::set('database.default','bisu');
-		Config::set('database.mysql.passwordp','rootwdp');
-		echo '<hr>';
-		echo Config::get('database.default','test');
-		echo '<hr>';
-		echo "You want to see the details od $pdtid";
+		$db=DataBase::getInstance();
+		$db->setQuery("INSERT INTO `users`(`username`,`password`) VALUES('userone2','33333')")->query();
+
+		$db2=DataBase::getInstance();
+		$db2->setQuery("INSERT INTO `users`(`username`,`password`) VALUES('bisu','33333')")->query();
+
+		print_r($db2->getQueries());
+		// //echo baseURL;
+		// echo Config::get('database.default','test');
+		// echo '<hr>';
+		// Config::set('database.default','bisu');
+		// Config::set('database.mysql.passwordp','rootwdp');
+		// echo '<hr>';
+		// echo Config::get('database.default','test');
+		// echo '<hr>';
+		// echo "You want to see the details od $pdtid";
+
 	}
 }
 

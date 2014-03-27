@@ -4,7 +4,7 @@ return array(
 	'mysql'=>array(
 		'host'=>'localhost',
 		'username'=>'root',
-		'password'=>'secret',
+		'password'=>'rootwdp',
 		'db'=>'druto',
 		'prefix'=>'dru__',
 		'prefix_alias'=>'#__',
