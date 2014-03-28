@@ -10,6 +10,6 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "druto/framework":"1.0.*"
+        "druto/framework":">=1.0.0"
     }
 }

@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "5658de6df8e4c18e0867e0da1edce6f5",
+    "hash": "ab8fe5c49612764ebe0de1ad68ee1152",
     "packages": [
         {
             "name": "druto/framework",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/druto/framework.git",
-                "reference": "a4da013e3958dd9f622544568fc21e5efe67b39d"
+                "reference": "e6f1e6f0c1b1e0fd987b0dd7255ba8702695e1b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/druto/framework/zipball/a4da013e3958dd9f622544568fc21e5efe67b39d",
-                "reference": "a4da013e3958dd9f622544568fc21e5efe67b39d",
+                "url": "https://api.github.com/repos/druto/framework/zipball/e6f1e6f0c1b1e0fd987b0dd7255ba8702695e1b0",
+                "reference": "e6f1e6f0c1b1e0fd987b0dd7255ba8702695e1b0",
                 "shasum": ""
             },
             "require": {
@@ -24,9 +24,6 @@
             },
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "src/Druto/Alias"
-                ],
                 "psr-0": {
                     "Druto": "src/"
                 }
@@ -42,7 +39,7 @@
                 }
             ],
             "description": "Druto PHP Framework",
-            "time": "2014-03-28 19:29:10"
+            "time": "2014-03-28 20:09:37"
         }
     ],
     "packages-dev": [
@@ -51,10 +48,10 @@
     "aliases": [
 
     ],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "druto/framework": 20
-    },
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ],
     "platform": [
 
     ],
