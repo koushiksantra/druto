@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/druto/framework.git",
-                "reference": "d7ad1c1248f9b44b58146499ed230fd7f63591ca"
+                "reference": "a4da013e3958dd9f622544568fc21e5efe67b39d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/druto/framework/zipball/d7ad1c1248f9b44b58146499ed230fd7f63591ca",
-                "reference": "d7ad1c1248f9b44b58146499ed230fd7f63591ca",
+                "url": "https://api.github.com/repos/druto/framework/zipball/a4da013e3958dd9f622544568fc21e5efe67b39d",
+                "reference": "a4da013e3958dd9f622544568fc21e5efe67b39d",
                 "shasum": ""
             },
             "require": {
@@ -24,6 +24,9 @@
             },
             "type": "library",
             "autoload": {
+                "classmap": [
+                    "src/Druto/Alias"
+                ],
                 "psr-0": {
                     "Druto": "src/"
                 }
@@ -39,7 +42,7 @@
                 }
             ],
             "description": "Druto PHP Framework",
-            "time": "2014-03-21 15:35:16"
+            "time": "2014-03-28 19:29:10"
         }
     ],
     "packages-dev": [

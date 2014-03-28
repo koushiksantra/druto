@@ -48,13 +48,13 @@ class BlogController extends Controller
 
 	public function getproductDetails($pdtid)
 	{
-		$db=DataBase::getInstance();
-		$db->setQuery("INSERT INTO `users`(`username`,`password`) VALUES('userone2','33333')")->query();
+		//$db=DataBase::getInstance();
+		//$db->setQuery("INSERT INTO `users`(`username`,`password`) VALUES('userone2','33333')")->query();
 
-		$db2=DataBase::getInstance();
-		$db2->setQuery("INSERT INTO `users`(`username`,`password`) VALUES('bisu','33333')")->query();
+		//$db2=DataBase::getInstance();
+		//$db2->setQuery("INSERT INTO `users`(`username`,`password`) VALUES('bisu','33333')")->query();
 
-		print_r($db2->getQueries());
+		//print_r($db2->getQueries());
 		// //echo baseURL;
 		// echo Config::get('database.default','test');
 		// echo '<hr>';
@@ -63,7 +63,7 @@ class BlogController extends Controller
 		// echo '<hr>';
 		// echo Config::get('database.default','test');
 		// echo '<hr>';
-		// echo "You want to see the details od $pdtid";
+		echo "You want to see the details od $pdtid";
 
 	}
 }
