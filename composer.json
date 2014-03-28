@@ -8,8 +8,8 @@
             "email": "biswarupadhikari@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
-        "druto/framework":"dev-master"
+        "druto/framework":"1.0.*"
     }
 }
