@@ -49,12 +49,21 @@ class BlogController extends Controller
 	public function getproductDetails($pdtid)
 	{
 		$post=new \Modules\Blog\Models\Post();
-		print_r($post->select('*')->where('id','>',5)->andWhere('id','<',8)->first());
+		//$post->id=26;
+		//$post->title="asdasdasd";
+		$post->save();
+		//$post->delete(array(7,8,9));
+		// $post->id=26;
+		// $post->title="This is Koushik Post Modified";
+		// $post->save();
+		// echo $post;
+		
+		//print_r($post->select('*')->where('id','>',5)->andWhere('id','<',8)->first());
 		// $post->title="First Post";
 		// $post->save();
 		// echo $post->id;
-		//$db=DataBase::getInstance();
-		//$db->setQuery("INSERT INTO `users`(`username`,`password`) VALUES('userone2','33333')")->query();
+		$db=DataBase::getInstance();
+		$db->setQuery("Select a from test")->query();
 
 		//$db2=DataBase::getInstance();
 		//$db2->setQuery("INSERT INTO `users`(`username`,`password`) VALUES('bisu','33333')")->query();
