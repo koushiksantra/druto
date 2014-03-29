@@ -3,7 +3,6 @@ namespace Modules\Blog\Controllers;
 use Modules\User\Models\Alam as Alam;
 use Druto\Controllers\Controller as Controller;
 use Druto\Configs\Config as Config;
-use Druto\DataBase\DataBase as DataBase;
 class BlogController extends Controller
 {
 	public $restfull=true;
@@ -49,9 +48,12 @@ class BlogController extends Controller
 	public function getproductDetails($pdtid)
 	{
 		$post=new \Modules\Blog\Models\Post();
+		$this->render->view('Modules.Blog.Views.index',array('a'=>'This is A','b'=>'This is B'));
+		exit;
+		//echo View::test();
 		//$post->id=26;
 		//$post->title="asdasdasd";
-		$post->save();
+		//$post->save();
 		//$post->delete(array(7,8,9));
 		// $post->id=26;
 		// $post->title="This is Koushik Post Modified";
