@@ -3,5 +3,5 @@ This is Blog Index View
 	<input	type="text">
 </form>
 <?php
-print_r($this->data);
-echo $a;
+echo $title;
+echo $alam;

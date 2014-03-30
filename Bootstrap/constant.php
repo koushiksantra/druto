@@ -5,6 +5,7 @@
 define('Druto',True);
 define('APPDIR',__DIR__.'/..');
 define('MODULESDIR',__DIR__.'/../Modules');
+define('TEMPLATESDIR',__DIR__.'/../Templates');
 define('CONFIGSDIR',__DIR__.'/../Configs');
 /**
 *Setting Up URL Constant

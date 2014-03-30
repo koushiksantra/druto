@@ -48,7 +48,13 @@ class BlogController extends Controller
 	public function getproductDetails($pdtid)
 	{
 		$post=new \Modules\Blog\Models\Post();
-		$this->render->view('Modules.Blog.Views.index',array('a'=>'This is A','b'=>'This is B'));
+		//$this->render->view('Modules.Blog.Views.index',array('a'=>'This is A','b'=>'This is B'));
+		$this->render->addJS('a.js');
+		$this->render->addCSS('a.css');
+		$this->render->addCSS('css/default.css');
+		$this->render->with("title","This is New Title");
+		$this->render->alam="This is Alam";
+		$this->render->template('Modules.Blog.Views.index',array('a'=>'This is A','b'=>'This is B'));
 		exit;
 		//echo View::test();
 		//$post->id=26;
