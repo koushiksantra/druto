@@ -1,4 +1,5 @@
 <?php
+use Druto\HTML\HTML as HTML;
 /**
  * Druto Helper Functions
  */
@@ -24,7 +25,7 @@ if ( ! function_exists('p'))
 	}
 }
 /**
- * Print Object Array
+ * Load Widget Array
  */
 if ( ! function_exists('loadWidget'))
 {
@@ -45,7 +46,7 @@ if ( ! function_exists('loadWidget'))
 		{
 			$widgetPath=$widgetBaseDir.'/index.html';
 		}
-		
+
 		if(!file_exists($widgetPath) || is_dir($widgetPath))
 		{
 			throw new Druto\Exceptions\WidgetException("$widget file $widgetPath not found");
@@ -53,4 +54,23 @@ if ( ! function_exists('loadWidget'))
 		include $widgetPath;
 	}
 }
-
+/**
+ * Add CSS
+ */
+if ( ! function_exists('addCSS'))
+{
+	function addCSS($css)
+	{
+		HTML::addCSS($css);
+	}
+}
+/**
+ * Add JS
+ */
+if ( ! function_exists('addJS'))
+{
+	function addJS($js)
+	{
+		HTML::addJS($js);
+	}
+}
