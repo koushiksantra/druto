@@ -17,6 +17,9 @@
     <![endif]-->
   </head>
   <body>
+  <div id="sidebar">
+  		<?php loadWidget('Widgets.Hello',array('imageDir'=>'/images'));?>
+  </div>
     <?php echo $this->content;?>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
