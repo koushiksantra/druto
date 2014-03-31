@@ -5,3 +5,5 @@ This is Blog Index View
 <?php
 echo $title;
 echo $alam;
+?>
+<?php loadWidget('Widgets.Hello',array('imageDir'=>'/images'));?>
