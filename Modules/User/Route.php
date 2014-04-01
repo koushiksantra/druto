@@ -41,3 +41,4 @@ Route::patch('/sam',function()
 	p($_REQUEST);
 	echo "Sam Via PATCH";
 });
+Route::post('/user/register','Modules\User\Controllers\UserController@registerUser');
