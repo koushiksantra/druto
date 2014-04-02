@@ -1,4 +1,5 @@
 <?php
+//use Druto\Session\Session;
 Route::get('/users/([0-9]+)',function($userId)
 {
 	echo "This is From Route $userId";
@@ -13,6 +14,11 @@ Route::get('/userprofile/([a-z_]+)','Modules\User\Controllers\UserController@pro
 Route::get('/dipu/([a-z]+)',function($title)
 {
 		echo "Dipanjan $title";
+});
+Route::get('/session',function(){
+	$session=Session::getInstance();
+	$session->set('test','asdasdasd');
+	echo "Session".$session->get('test');
 });
 
 Route::get('/sam',function()
