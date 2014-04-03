@@ -6,7 +6,7 @@ class CreateCommand extends DrutoCli
 	public function index()
 	{
 		p($this->params);
-		$this->display->msg("Help Command");
+		$this->display->msg("Create Command Help");
 	}
 	public function widget()
 	{
