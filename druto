@@ -1,0 +1,8 @@
+#!/usr/bin/php -q
+<?php
+$drutoCli=require __DIR__.'/Bootstrap/cliStart.php';
+try {
+	$drutoCli->run($argv);
+} catch (Exception $e) {
+	echo $e->getMessage();
+}
