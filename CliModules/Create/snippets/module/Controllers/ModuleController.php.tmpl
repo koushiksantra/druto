@@ -1,0 +1,38 @@
+<?php
+namespace Modules\{{MODULE_NAME}}\Controllers;
+use Druto\Controllers\Controller as Controller;
+use Druto\Configs\Config as Config;
+use Modules\{{MODULE_NAME}}\Models\{{MODULE_NAME}}Model as {{MODULE_NAME}}Model;
+class {{MODULE_NAME}}Controller extends Controller
+{
+	public $restfull=true;
+	
+	public function getIndex()
+	{
+		$model=new {{MODULE_NAME}}Model();
+		$this->render->welcome=$model->getWelcomeMsg();
+		$this->render->message="Welcome to {{MODULE_NAME}} Module getIndex()";
+		$this->render->template('Modules.{{MODULE_NAME}}.Views.index',array());
+	}
+	public function postIndex()
+	{
+		$model=new {{MODULE_NAME}}Model();
+		$this->render->welcome=$model->getWelcomeMsg();
+		$this->render->message="Welcome to {{MODULE_NAME}} Module postIndex()";
+		$this->render->template('Modules.{{MODULE_NAME}}.Views.index',array());
+	}
+	public function putIndex()
+	{
+		$model=new {{MODULE_NAME}}Model();
+		$this->render->welcome=$model->getWelcomeMsg();
+		$this->render->message="Welcome to {{MODULE_NAME}} Module putIndex()";
+		$this->render->template('Modules.{{MODULE_NAME}}.Views.index',array());
+	}
+	public function deleteIndex()
+	{
+		$model=new {{MODULE_NAME}}Model();
+		$this->render->welcome=$model->getWelcomeMsg();
+		$this->render->message="Welcome to {{MODULE_NAME}} Module deleteIndex()";
+		$this->render->template('Modules.{{MODULE_NAME}}.Views.index',array());
+	}
+}
